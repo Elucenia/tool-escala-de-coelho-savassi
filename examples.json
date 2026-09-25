@@ -1,0 +1,114 @@
+[
+  {
+    "label": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5
+    },
+    "expected": {
+      "score": 13,
+      "level": "high",
+      "verdict": "R3"
+    },
+    "originalInput": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+    "input": {
+      "has": 1,
+      "dm": 1,
+      "maior70": 1,
+      "moradores": 4,
+      "comodos": 4
+    },
+    "expected": {
+      "score": 5,
+      "level": "low",
+      "verdict": "R1"
+    },
+    "originalInput": {
+      "has": 1,
+      "dm": 1,
+      "maior70": 1,
+      "moradores": 4,
+      "comodos": 4
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+    "input": {
+      "desemprego": 1,
+      "analfabetismo": 2,
+      "moradores": 5,
+      "comodos": 4
+    },
+    "expected": {
+      "score": 7,
+      "level": "mid",
+      "verdict": "R2"
+    },
+    "originalInput": {
+      "desemprego": 1,
+      "analfabetismo": 2,
+      "moradores": 5,
+      "comodos": 4
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+    "input": {
+      "saneamento": true,
+      "drogadicao": 1,
+      "dm": 1,
+      "moradores": 6,
+      "comodos": 3
+    },
+    "expected": {
+      "score": 9,
+      "level": "high"
+    },
+    "originalInput": {
+      "saneamento": true,
+      "drogadicao": 1,
+      "dm": 1,
+      "moradores": 6,
+      "comodos": 3
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+    "input": {
+      "has": 1,
+      "moradores": 2,
+      "comodos": 3
+    },
+    "expected": {
+      "score": 1,
+      "level": "low",
+      "verdict": "não atinge"
+    },
+    "originalInput": {
+      "has": 1,
+      "moradores": 2,
+      "comodos": 3
+    },
+    "expandedZeroOptions": []
+  }
+]

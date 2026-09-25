@@ -1,0 +1,335 @@
+{
+  "tool": {
+    "id": "escala-de-coelho-savassi",
+    "title": "Escala de risco familiar de Coelho-Savassi",
+    "short": "Risco familiar para priorizar visitas domiciliares",
+    "spec": [
+      "medicina-de-familia-e-comunidade",
+      "medicina-preventiva-e-social"
+    ],
+    "tier": 1,
+    "desc": "Escala de Risco Familiar de Coelho-Savassi: classifica o risco social e de saúde da família (R1, R2, R3) para priorizar visitas domiciliares na Saúde da Família.",
+    "lead": "Estratifica o risco das famílias adscritas a uma equipe de Saúde da Família, a partir de sentinelas de risco do cadastro, para organizar a prioridade das visitas domiciliares.",
+    "fields": [
+      [
+        "acamado",
+        "Acamados (restritos ao domicílio por incapacidade de locomoção)",
+        "num",
+        {
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "def_fisica",
+        "Pessoas com deficiência física",
+        "num",
+        {
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "def_mental",
+        "Pessoas com deficiência mental",
+        "num",
+        {
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "desnutricao",
+        "Pessoas com desnutrição grave",
+        "num",
+        {
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "saneamento",
+        "Baixas condições de saneamento no domicílio",
+        "chk",
+        {
+          "pts": 3
+        }
+      ],
+      [
+        "drogadicao",
+        "Pessoas com drogadição (inclui dependência de álcool)",
+        "num",
+        {
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "desemprego",
+        "Pessoas desempregadas",
+        "num",
+        {
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "analfabetismo",
+        "Pessoas analfabetas",
+        "num",
+        {
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "menor6m",
+        "Crianças menores de 6 meses",
+        "num",
+        {
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "maior70",
+        "Pessoas com mais de 70 anos",
+        "num",
+        {
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "has",
+        "Pessoas com hipertensão arterial",
+        "num",
+        {
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "dm",
+        "Pessoas com diabetes mellitus",
+        "num",
+        {
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "moradores",
+        "Número de moradores",
+        "num",
+        {
+          "min": 1,
+          "max": 40,
+          "step": 1,
+          "unit": "pessoas",
+          "ph": "4"
+        }
+      ],
+      [
+        "comodos",
+        "Número de cômodos (inclui banheiro e cozinha)",
+        "num",
+        {
+          "min": 1,
+          "max": 40,
+          "step": 1,
+          "unit": "cômodos",
+          "ph": "5"
+        }
+      ]
+    ],
+    "formula": "<p>Cada sentinela individual pontua <strong>por pessoa</strong> que a apresenta: acamado, deficiência física, deficiência mental e desnutrição grave 3; drogadição e desemprego 2; analfabetismo, menor de 6 meses, maior de 70 anos, hipertensão e diabetes 1. Baixas condições de saneamento: 3 (uma vez por família).</p><p>Relação morador/cômodo: maior que 1 = 3; igual a 1 = 2; menor que 1 = 0.</p>",
+    "table": [
+      [
+        "Escore total",
+        "Risco familiar"
+      ],
+      [
+        "5 e 6",
+        "R1: risco menor"
+      ],
+      [
+        "7 e 8",
+        "R2: risco médio"
+      ],
+      [
+        "Acima de 9",
+        "R3: risco máximo"
+      ]
+    ],
+    "table_note": "Quadro de classificação de Coelho e Savassi (2004). O escore 9 não tem faixa explícita no original; aqui é classificado como R3, de forma conservadora.",
+    "tips": [
+      "Exemplo do artigo de sistematização: família com dois acamados, um deles idoso de 75 anos e hipertenso e o outro com amputação traumática, ambos analfabetos: 3 + 3 + 1 + 1 + 3 + 1 + 1 = <strong>13 (R3)</strong>.",
+      "A escala é para organizar a agenda da equipe e o território, não substitui a avaliação clínica individual: uma família R1 pode ter uma pessoa que precisa de visita urgente.",
+      "Reaplique a escala quando o cadastro mudar (nascimento, óbito, alta de internação, desemprego) e ao menos uma vez por ano.",
+      "Na relação morador/cômodo, contam todos os compartimentos separados por paredes, inclusive banheiro e cozinha.",
+      "Os autores recomendam que os agentes comunitários apliquem a escala, com as primeiras famílias classificadas sob supervisão de quem conhece o instrumento."
+    ],
+    "sources": [
+      [
+        "Coelho FLG, Savassi LCM. Aplicação de Escala de Risco Familiar como instrumento de priorização das Visitas Domiciliares. Rev Bras Med Fam Comunidade, 2004.",
+        "https://doi.org/10.5712/rbmfc1(2)104"
+      ],
+      [
+        "Savassi LCM, Lage JL, Coelho FLG. Sistematização de instrumento de estratificação de risco familiar: a Escala de Risco Familiar de Coelho-Savassi. J Manag Prim Health Care, 2013.",
+        "https://doi.org/10.14295/jmphc.v3i2.155"
+      ]
+    ],
+    "cases": [
+      [
+        "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+        {
+          "acamado": 2,
+          "def_fisica": 1,
+          "maior70": 1,
+          "has": 1,
+          "analfabetismo": 2,
+          "moradores": 2,
+          "comodos": 5
+        },
+        {
+          "score": 13,
+          "level": "high",
+          "verdict": "R3"
+        }
+      ],
+      [
+        "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+        {
+          "has": 1,
+          "dm": 1,
+          "maior70": 1,
+          "moradores": 4,
+          "comodos": 4
+        },
+        {
+          "score": 5,
+          "level": "low",
+          "verdict": "R1"
+        }
+      ],
+      [
+        "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+        {
+          "desemprego": 1,
+          "analfabetismo": 2,
+          "moradores": 5,
+          "comodos": 4
+        },
+        {
+          "score": 7,
+          "level": "mid",
+          "verdict": "R2"
+        }
+      ],
+      [
+        "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+        {
+          "saneamento": true,
+          "drogadicao": 1,
+          "dm": 1,
+          "moradores": 6,
+          "comodos": 3
+        },
+        {
+          "score": 9,
+          "level": "high"
+        }
+      ],
+      [
+        "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+        {
+          "has": 1,
+          "moradores": 2,
+          "comodos": 3
+        },
+        {
+          "score": 1,
+          "level": "low",
+          "verdict": "não atinge"
+        }
+      ]
+    ],
+    "batch": "saude-coletiva",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "saude-coletiva",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/saude-coletiva.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/saude-coletiva.php",
+    "sha256": "5f081943f8faff99f4a6ac07fc16af6d7f8e6aa64d874af2d00ed8bae97da6a2",
+    "bytes": 77577
+  },
+  "clinicalValidation": "not-performed"
+}
