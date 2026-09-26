@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-escala-de-coelho-savassi",
   "version": "0.1.0",
-  "description": "Escala de risco familiar de Coelho-Savassi · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Escala de risco familiar de Coelho-Savassi · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
