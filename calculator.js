@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-escala-de-coelho-savassi · Elucenia · https://github.com/Elucenia/tool-escala-de-coelho-savassi
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escala-de-coelho-savassi","title":"Escala de risco familiar de Coelho-Savassi","fields":[["acamado","Acamados (restritos ao domicílio por incapacidade de locomoção)","num",{"min":0,"max":20,"step":1,"unit":"pessoas","ph":"0","opt":true}],["def_fisica","Pessoas com deficiência física","num",{"min":0,"max":20,"step":1,"unit":"pessoas","ph":"0","opt":true}],["def_mental","Pessoas com deficiência mental","num",{"min":0,"max":20,"step":1,"unit":"pessoas","ph":"0","opt":true}],["desnutricao","Pessoas com desnutrição grave","num",{"min":0,"max":20,"step":1,"unit":"pessoas","ph":"0","opt":true}],["saneamento","Baixas condições de saneamento no domicílio","chk",{"pts":3}],["drogadicao","Pessoas com drogadição (inclui dependência de álcool)","num",{"min":0,"max":20,"step":1,"unit":"pessoas","ph":"0","opt":true}],["desemprego","Pessoas desempregadas","num",{"min":0,"max":20,"step":1,"unit":"pessoas","ph":"0","opt":true}],["analfabetismo","Pessoas analfabetas","num",{"min":0,"max":20,"step":1,"unit":"pessoas","ph":"0","opt":true}],["menor6m","Crianças menores de 6 meses","num",{"min":0,"max":20,"step":1,"unit":"pessoas","ph":"0","opt":true}],["maior70","Pessoas com mais de 70 anos","num",{"min":0,"max":20,"step":1,"unit":"pessoas","ph":"0","opt":true}],["has","Pessoas com hipertensão arterial","num",{"min":0,"max":20,"step":1,"unit":"pessoas","ph":"0","opt":true}],["dm","Pessoas com diabetes mellitus","num",{"min":0,"max":20,"step":1,"unit":"pessoas","ph":"0","opt":true}],["moradores","Número de moradores","num",{"min":1,"max":40,"step":1,"unit":"pessoas","ph":"4"}],["comodos","Número de cômodos (inclui banheiro e cozinha)","num",{"min":1,"max":40,"step":1,"unit":"cômodos","ph":"5"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
