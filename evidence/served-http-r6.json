@@ -1,0 +1,1113 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "escala-de-coelho-savassi",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/escala-de-coelho-savassi/calculator.js",
+    "sha256": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31",
+    "bytes": 6900
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 5,
+    "replayed": 5,
+    "passed": 5,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "escala-de-coelho-savassi",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+      "originalInput": {
+        "acamado": 2,
+        "def_fisica": 1,
+        "maior70": 1,
+        "has": 1,
+        "analfabetismo": 2,
+        "moradores": 2,
+        "comodos": 5
+      },
+      "input": {
+        "acamado": 2,
+        "def_fisica": 1,
+        "maior70": 1,
+        "has": 1,
+        "analfabetismo": 2,
+        "moradores": 2,
+        "comodos": 5,
+        "saneamento": false
+      },
+      "amendments": [
+        {
+          "field": "saneamento",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 13,
+        "level": "high",
+        "verdict": "R3"
+      },
+      "recordedResult": {
+        "main": [
+          "13",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "raw": {
+          "score": 13,
+          "ratio": 0.4
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "acamado": 2,
+            "def_fisica": 1,
+            "maior70": 1,
+            "has": 1,
+            "analfabetismo": 2,
+            "moradores": 2,
+            "comodos": 5,
+            "saneamento": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+          "startedAt": "2026-10-05T17:37:12.344Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escala-de-coelho-savassi",
+              "main": [
+                "13",
+                "pontos"
+              ],
+              "label": "Escala de Coelho-Savassi",
+              "raw": {
+                "score": 13,
+                "ratio": 0.4
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "cd3f95643d2f562c7d8398188f199f4b20241cda860fb309a95d3f7166a62913",
+          "bytes": 170,
+          "elapsedMs": 4.360799999994924
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+        "startedAt": "2026-10-05T17:37:12.344Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escala-de-coelho-savassi",
+            "main": [
+              "13",
+              "pontos"
+            ],
+            "label": "Escala de Coelho-Savassi",
+            "raw": {
+              "score": 13,
+              "ratio": 0.4
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "cd3f95643d2f562c7d8398188f199f4b20241cda860fb309a95d3f7166a62913",
+        "bytes": 170,
+        "elapsedMs": 4.360799999994924
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 13,
+            "obtained": 13,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 13,
+            "obtained": 13,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ratio",
+            "expected": 0.4,
+            "obtained": 0.4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "13",
+            "obtained": "13",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escala-de-coelho-savassi",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+      "originalInput": {
+        "has": 1,
+        "dm": 1,
+        "maior70": 1,
+        "moradores": 4,
+        "comodos": 4
+      },
+      "input": {
+        "has": 1,
+        "dm": 1,
+        "maior70": 1,
+        "moradores": 4,
+        "comodos": 4,
+        "saneamento": false
+      },
+      "amendments": [
+        {
+          "field": "saneamento",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 5,
+        "level": "low",
+        "verdict": "R1"
+      },
+      "recordedResult": {
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "raw": {
+          "score": 5,
+          "ratio": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "has": 1,
+            "dm": 1,
+            "maior70": 1,
+            "moradores": 4,
+            "comodos": 4,
+            "saneamento": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+          "startedAt": "2026-10-05T17:37:12.658Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escala-de-coelho-savassi",
+              "main": [
+                "5",
+                "pontos"
+              ],
+              "label": "Escala de Coelho-Savassi",
+              "raw": {
+                "score": 5,
+                "ratio": 1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "256f05929f37e74c77834ff93ff1e7e33b127d178095a94d2d69a1b9f3f4184a",
+          "bytes": 166,
+          "elapsedMs": 2.8040000000037253
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+        "startedAt": "2026-10-05T17:37:12.658Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escala-de-coelho-savassi",
+            "main": [
+              "5",
+              "pontos"
+            ],
+            "label": "Escala de Coelho-Savassi",
+            "raw": {
+              "score": 5,
+              "ratio": 1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "256f05929f37e74c77834ff93ff1e7e33b127d178095a94d2d69a1b9f3f4184a",
+        "bytes": 166,
+        "elapsedMs": 2.8040000000037253
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ratio",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "5",
+            "obtained": "5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escala-de-coelho-savassi",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+      "originalInput": {
+        "desemprego": 1,
+        "analfabetismo": 2,
+        "moradores": 5,
+        "comodos": 4
+      },
+      "input": {
+        "desemprego": 1,
+        "analfabetismo": 2,
+        "moradores": 5,
+        "comodos": 4,
+        "saneamento": false
+      },
+      "amendments": [
+        {
+          "field": "saneamento",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 7,
+        "level": "mid",
+        "verdict": "R2"
+      },
+      "recordedResult": {
+        "main": [
+          "7",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "raw": {
+          "score": 7,
+          "ratio": 1.25
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "desemprego": 1,
+            "analfabetismo": 2,
+            "moradores": 5,
+            "comodos": 4,
+            "saneamento": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+          "startedAt": "2026-10-05T17:37:12.970Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escala-de-coelho-savassi",
+              "main": [
+                "7",
+                "pontos"
+              ],
+              "label": "Escala de Coelho-Savassi",
+              "raw": {
+                "score": 7,
+                "ratio": 1.25
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "1c3b60e5380b162bc79f8f8c54fa8ac60e67559280e5d0e37bafa047aeb9e68a",
+          "bytes": 169,
+          "elapsedMs": 4.632400000002235
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+        "startedAt": "2026-10-05T17:37:12.970Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escala-de-coelho-savassi",
+            "main": [
+              "7",
+              "pontos"
+            ],
+            "label": "Escala de Coelho-Savassi",
+            "raw": {
+              "score": 7,
+              "ratio": 1.25
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "1c3b60e5380b162bc79f8f8c54fa8ac60e67559280e5d0e37bafa047aeb9e68a",
+        "bytes": 169,
+        "elapsedMs": 4.632400000002235
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ratio",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7",
+            "obtained": "7",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escala-de-coelho-savassi",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+      "originalInput": {
+        "saneamento": true,
+        "drogadicao": 1,
+        "dm": 1,
+        "moradores": 6,
+        "comodos": 3
+      },
+      "input": {
+        "saneamento": true,
+        "drogadicao": 1,
+        "dm": 1,
+        "moradores": 6,
+        "comodos": 3
+      },
+      "amendments": [],
+      "expected": {
+        "score": 9,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "raw": {
+          "score": 9,
+          "ratio": 2
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "saneamento": true,
+            "drogadicao": 1,
+            "dm": 1,
+            "moradores": 6,
+            "comodos": 3
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+          "startedAt": "2026-10-05T17:37:13.284Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escala-de-coelho-savassi",
+              "main": [
+                "9",
+                "pontos"
+              ],
+              "label": "Escala de Coelho-Savassi",
+              "raw": {
+                "score": 9,
+                "ratio": 2
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6ceb7f59e9070cb34f2598defbb160abea50e6818d8e6cb10b1d6e4647c363d6",
+          "bytes": 166,
+          "elapsedMs": 4.287700000000768
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+        "startedAt": "2026-10-05T17:37:13.284Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escala-de-coelho-savassi",
+            "main": [
+              "9",
+              "pontos"
+            ],
+            "label": "Escala de Coelho-Savassi",
+            "raw": {
+              "score": 9,
+              "ratio": 2
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6ceb7f59e9070cb34f2598defbb160abea50e6818d8e6cb10b1d6e4647c363d6",
+        "bytes": 166,
+        "elapsedMs": 4.287700000000768
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 9,
+            "obtained": 9,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 9,
+            "obtained": 9,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ratio",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "9",
+            "obtained": "9",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escala-de-coelho-savassi",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+      "originalInput": {
+        "has": 1,
+        "moradores": 2,
+        "comodos": 3
+      },
+      "input": {
+        "has": 1,
+        "moradores": 2,
+        "comodos": 3,
+        "saneamento": false
+      },
+      "amendments": [
+        {
+          "field": "saneamento",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 1,
+        "level": "low",
+        "verdict": "não atinge"
+      },
+      "recordedResult": {
+        "main": [
+          "1",
+          "ponto"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "raw": {
+          "score": 1,
+          "ratio": 0.6666666666666666
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "has": 1,
+            "moradores": 2,
+            "comodos": 3,
+            "saneamento": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+          "startedAt": "2026-10-05T17:37:13.583Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escala-de-coelho-savassi",
+              "main": [
+                "1",
+                "ponto"
+              ],
+              "label": "Escala de Coelho-Savassi",
+              "raw": {
+                "score": 1,
+                "ratio": 0.6666666666666666
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "af12b8af1c9ddda89c9264352a756995ab655a230155c98b347f589a175480ad",
+          "bytes": 182,
+          "elapsedMs": 2.8144000000029337
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escala-de-coelho-savassi/calculate",
+        "startedAt": "2026-10-05T17:37:13.583Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escala-de-coelho-savassi",
+            "main": [
+              "1",
+              "ponto"
+            ],
+            "label": "Escala de Coelho-Savassi",
+            "raw": {
+              "score": 1,
+              "ratio": 0.6666666666666666
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "af12b8af1c9ddda89c9264352a756995ab655a230155c98b347f589a175480ad",
+        "bytes": 182,
+        "elapsedMs": 2.8144000000029337
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ratio",
+            "expected": 0.6666666666666666,
+            "obtained": 0.6666666666666666,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "1",
+            "obtained": "1",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "ponto",
+            "obtained": "ponto",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
