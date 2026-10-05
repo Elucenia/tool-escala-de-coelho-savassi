@@ -1,0 +1,2046 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" acamado",
+    "input": {
+      "acamado": "NaN",
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "acamado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" acamado",
+    "input": {
+      "acamado": "Infinity",
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "acamado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" acamado",
+    "input": {
+      "acamado": "1e309",
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "acamado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" acamado",
+    "input": {
+      "acamado": "invalid",
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "acamado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} acamado",
+    "input": {
+      "acamado": {},
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "acamado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true acamado",
+    "input": {
+      "acamado": true,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "acamado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum acamado",
+    "input": {
+      "acamado": -1,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "acamado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum acamado",
+    "input": {
+      "acamado": 22,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "acamado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" def_fisica",
+    "input": {
+      "acamado": 2,
+      "def_fisica": "NaN",
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_fisica"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" def_fisica",
+    "input": {
+      "acamado": 2,
+      "def_fisica": "Infinity",
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_fisica"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" def_fisica",
+    "input": {
+      "acamado": 2,
+      "def_fisica": "1e309",
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_fisica"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" def_fisica",
+    "input": {
+      "acamado": 2,
+      "def_fisica": "invalid",
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_fisica"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} def_fisica",
+    "input": {
+      "acamado": 2,
+      "def_fisica": {},
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_fisica"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true def_fisica",
+    "input": {
+      "acamado": 2,
+      "def_fisica": true,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_fisica"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum def_fisica",
+    "input": {
+      "acamado": 2,
+      "def_fisica": -1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "def_fisica"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum def_fisica",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 22,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "def_fisica"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" def_mental",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "def_mental": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_mental"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" def_mental",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "def_mental": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_mental"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" def_mental",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "def_mental": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_mental"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" def_mental",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "def_mental": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_mental"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} def_mental",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "def_mental": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_mental"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true def_mental",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "def_mental": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "def_mental"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum def_mental",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "def_mental": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "def_mental"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum def_mental",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "def_mental": 22
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "def_mental"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" desnutricao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desnutricao": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desnutricao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" desnutricao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desnutricao": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desnutricao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" desnutricao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desnutricao": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desnutricao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" desnutricao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desnutricao": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desnutricao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} desnutricao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desnutricao": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desnutricao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true desnutricao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desnutricao": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desnutricao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum desnutricao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desnutricao": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "desnutricao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum desnutricao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desnutricao": 22
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "desnutricao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean saneamento",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "saneamento"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" drogadicao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "drogadicao": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "drogadicao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" drogadicao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "drogadicao": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "drogadicao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" drogadicao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "drogadicao": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "drogadicao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" drogadicao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "drogadicao": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "drogadicao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} drogadicao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "drogadicao": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "drogadicao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true drogadicao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "drogadicao": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "drogadicao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum drogadicao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "drogadicao": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "drogadicao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum drogadicao",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "drogadicao": 22
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "drogadicao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" desemprego",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desemprego": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desemprego"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" desemprego",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desemprego": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desemprego"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" desemprego",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desemprego": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desemprego"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" desemprego",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desemprego": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desemprego"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} desemprego",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desemprego": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desemprego"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true desemprego",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desemprego": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desemprego"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum desemprego",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desemprego": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "desemprego"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum desemprego",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "desemprego": 22
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "desemprego"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" analfabetismo",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": "NaN",
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "analfabetismo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" analfabetismo",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": "Infinity",
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "analfabetismo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" analfabetismo",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": "1e309",
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "analfabetismo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" analfabetismo",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": "invalid",
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "analfabetismo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} analfabetismo",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": {},
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "analfabetismo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true analfabetismo",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": true,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "analfabetismo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum analfabetismo",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": -1,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "analfabetismo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum analfabetismo",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 22,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "analfabetismo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" menor6m",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "menor6m": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "menor6m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" menor6m",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "menor6m": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "menor6m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" menor6m",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "menor6m": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "menor6m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" menor6m",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "menor6m": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "menor6m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} menor6m",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "menor6m": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "menor6m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true menor6m",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "menor6m": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "menor6m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum menor6m",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "menor6m": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "menor6m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum menor6m",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "menor6m": 22
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "menor6m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" maior70",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": "NaN",
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maior70"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" maior70",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": "Infinity",
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maior70"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" maior70",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": "1e309",
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maior70"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" maior70",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": "invalid",
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maior70"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} maior70",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": {},
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maior70"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true maior70",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": true,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "maior70"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum maior70",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": -1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "maior70"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum maior70",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 22,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "maior70"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" has",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": "NaN",
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "has"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" has",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": "Infinity",
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "has"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" has",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": "1e309",
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "has"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" has",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": "invalid",
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "has"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} has",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": {},
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "has"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true has",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": true,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "has"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum has",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": -1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "has"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum has",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 22,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "has"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" dm",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "dm": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" dm",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "dm": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" dm",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "dm": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" dm",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "dm": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} dm",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "dm": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true dm",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "dm": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum dm",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "dm": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "dm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum dm",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false,
+      "dm": 22
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "dm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field moradores",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "moradores"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field moradores",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": "",
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "moradores"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" moradores",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": "NaN",
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "moradores"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" moradores",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": "Infinity",
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "moradores"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" moradores",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": "1e309",
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "moradores"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" moradores",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": "invalid",
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "moradores"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} moradores",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": {},
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "moradores"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true moradores",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": true,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "moradores"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum moradores",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 0,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "moradores"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum moradores",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 44,
+      "comodos": 5,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "moradores"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field comodos",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "comodos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field comodos",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": "",
+      "saneamento": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "comodos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" comodos",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": "NaN",
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comodos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" comodos",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": "Infinity",
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comodos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" comodos",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": "1e309",
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comodos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" comodos",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": "invalid",
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comodos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} comodos",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": {},
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comodos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true comodos",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": true,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comodos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum comodos",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 0,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "comodos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum comodos",
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 44,
+      "saneamento": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "comodos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

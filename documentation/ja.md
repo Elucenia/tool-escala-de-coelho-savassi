@@ -1,0 +1,143 @@
+<!-- ELUCENIA technical documentation · escala-de-coelho-savassi · ja · no clinical/professional/rights approval -->
+
+# Coelho-Savassi家族リスク尺度
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/escala-de-coelho-savassi)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### 寝たきり（移動不能により自宅から出られない）
+
+`acamado`
+
+人 · 任意 · 範囲: 0–20
+
+### 身体障害のある人
+
+`def_fisica`
+
+人 · 任意 · 範囲: 0–20
+
+### 精神・知的障害のある人
+
+`def_mental`
+
+人 · 任意 · 範囲: 0–20
+
+### 重度低栄養の人
+
+`desnutricao`
+
+人 · 任意 · 範囲: 0–20
+
+### 住居の衛生設備が不十分
+
+`saneamento`
+
+### 薬物依存の人（アルコール依存を含む）
+
+`drogadicao`
+
+人 · 任意 · 範囲: 0–20
+
+### 失業者
+
+`desemprego`
+
+人 · 任意 · 範囲: 0–20
+
+### 読み書きのできない人
+
+`analfabetismo`
+
+人 · 任意 · 範囲: 0–20
+
+### 6か月未満の乳児
+
+`menor6m`
+
+人 · 任意 · 範囲: 0–20
+
+### 70歳を超える人
+
+`maior70`
+
+人 · 任意 · 範囲: 0–20
+
+### 高血圧の人
+
+`has`
+
+人 · 任意 · 範囲: 0–20
+
+### 糖尿病の人
+
+`dm`
+
+人 · 任意 · 範囲: 0–20
+
+### 同居人数
+
+`moradores`
+
+人 · 範囲: 1–40
+
+### 部屋数（浴室・台所を含む）
+
+`comodos`
+
+部屋 · 範囲: 1–40
+
+## 方法の版
+
+Coelho–Savassi 2004、2013年の体系化。指標は人数ごと、衛生環境は家族ごとに算定。R3 ≥9はローカルの保守的な選択。
+
+## 記載された計算式
+
+各個人項目は人ごと：寝たきり、身体障害、知的障害、重度栄養不良3、薬物依存・失業2、非識字、6か月未満、70歳超、高血圧、糖尿病1。劣悪な衛生設備3（家庭ごと1回）。
+
+住民/部屋：1超 = 3、1 = 2、1未満 = 0。
+
+## 限界・対象集団
+
+Coelho–Savassiはブラジルのプライマリケアで家族の優先順位を付けるもので、個人の疾病確率や家族の全体的な動態を示すものではありません。個人の指標は人数ごとに、衛生環境は家族につき一度だけ数えてください。参照した2004年と2013年の表ではR3を9点を超えると記載し、9点の範囲を明示していません。本実装はローカルの保守的な選択として9点以上をR3とし、原表にこの閾値が明記されているとは示しません。年齢と指標の操作的定義を確認し、家族の状況を定期的に再評価してください。
+
+## 参考文献
+
+- [Coelho FLG, Savassi LCM. Aplicação de Escala de Risco Familiar como instrumento de priorização das Visitas Domiciliares. Rev Bras Med Fam Comunidade, 2004.](https://doi.org/10.5712/rbmfc1(2)104)
+
+- [Savassi LCM, Lage JL, Coelho FLG. Sistematização de instrumento de estratificação de risco familiar: a Escala de Risco Familiar de Coelho-Savassi. J Manag Prim Health Care, 2013.](https://doi.org/10.14295/jmphc.v3i2.155)
+
+- [Coelho/Savassi2004](https://rbmfc.org.br/rbmfc/article/download/104/pdf/296)
+
+- [Savassi2013,systematization](https://www.jmphc.com.br/jmphc/article/download/155/158/185)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

@@ -3,13 +3,13 @@
     "id": "escala-de-coelho-savassi",
     "title": "Escala de risco familiar de Coelho-Savassi",
     "short": "Risco familiar para priorizar visitas domiciliares",
+    "desc": "Escala de Risco Familiar de Coelho-Savassi: classifica o risco social e de saúde da família (R1, R2, R3) para priorizar visitas domiciliares na Saúde da Família.",
+    "lead": "Estratifica o risco das famílias adscritas a uma equipe de Saúde da Família, a partir de sentinelas de risco do cadastro, para organizar a prioridade das visitas domiciliares.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-de-familia-e-comunidade",
       "medicina-preventiva-e-social"
     ],
-    "tier": 1,
-    "desc": "Escala de Risco Familiar de Coelho-Savassi: classifica o risco social e de saúde da família (R1, R2, R3) para priorizar visitas domiciliares na Saúde da Família.",
-    "lead": "Estratifica o risco das famílias adscritas a uma equipe de Saúde da Família, a partir de sentinelas de risco do cadastro, para organizar a prioridade das visitas domiciliares.",
     "fields": [
       [
         "acamado",
@@ -67,9 +67,7 @@
         "saneamento",
         "Baixas condições de saneamento no domicílio",
         "chk",
-        {
-          "pts": 3
-        }
+        {}
       ],
       [
         "drogadicao",
@@ -188,32 +186,6 @@
       ]
     ],
     "formula": "<p>Cada sentinela individual pontua <strong>por pessoa</strong> que a apresenta: acamado, deficiência física, deficiência mental e desnutrição grave 3; drogadição e desemprego 2; analfabetismo, menor de 6 meses, maior de 70 anos, hipertensão e diabetes 1. Baixas condições de saneamento: 3 (uma vez por família).</p><p>Relação morador/cômodo: maior que 1 = 3; igual a 1 = 2; menor que 1 = 0.</p>",
-    "table": [
-      [
-        "Escore total",
-        "Risco familiar"
-      ],
-      [
-        "5 e 6",
-        "R1: risco menor"
-      ],
-      [
-        "7 e 8",
-        "R2: risco médio"
-      ],
-      [
-        "Acima de 9",
-        "R3: risco máximo"
-      ]
-    ],
-    "table_note": "Quadro de classificação de Coelho e Savassi (2004). O escore 9 não tem faixa explícita no original; aqui é classificado como R3, de forma conservadora.",
-    "tips": [
-      "Exemplo do artigo de sistematização: família com dois acamados, um deles idoso de 75 anos e hipertenso e o outro com amputação traumática, ambos analfabetos: 3 + 3 + 1 + 1 + 3 + 1 + 1 = <strong>13 (R3)</strong>.",
-      "A escala é para organizar a agenda da equipe e o território, não substitui a avaliação clínica individual: uma família R1 pode ter uma pessoa que precisa de visita urgente.",
-      "Reaplique a escala quando o cadastro mudar (nascimento, óbito, alta de internação, desemprego) e ao menos uma vez por ano.",
-      "Na relação morador/cômodo, contam todos os compartimentos separados por paredes, inclusive banheiro e cozinha.",
-      "Os autores recomendam que os agentes comunitários apliquem a escala, com as primeiras famílias classificadas sob supervisão de quem conhece o instrumento."
-    ],
     "sources": [
       [
         "Coelho FLG, Savassi LCM. Aplicação de Escala de Risco Familiar como instrumento de priorização das Visitas Domiciliares. Rev Bras Med Fam Comunidade, 2004.",
@@ -222,6 +194,14 @@
       [
         "Savassi LCM, Lage JL, Coelho FLG. Sistematização de instrumento de estratificação de risco familiar: a Escala de Risco Familiar de Coelho-Savassi. J Manag Prim Health Care, 2013.",
         "https://doi.org/10.14295/jmphc.v3i2.155"
+      ],
+      [
+        "Coelho/Savassi2004",
+        "https://rbmfc.org.br/rbmfc/article/download/104/pdf/296"
+      ],
+      [
+        "Savassi2013,systematization",
+        "https://www.jmphc.com.br/jmphc/article/download/155/158/185"
       ]
     ],
     "cases": [
@@ -299,9 +279,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -310,17 +287,479 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:50:48.730Z",
+      "total": 12520,
+      "passed": 12520,
+      "sourceRowCount": 12520,
+      "uniqueApiInputCount": 12520,
+      "sourceContextCount": 12520,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "9a60b2e9bd4edb0037c2635fc5c68a63be1849de6c5b778110e02d1d16a61ac5",
+        "total": 12520,
+        "bankRowCount": 12520,
+        "uniqueApiInputCount": 12520,
+        "sourceContextCount": 12520,
+        "fullStoredSourceRows": 12520,
+        "localRejectionContractCount": 0,
+        "excludedSourceObservationCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-occupational-independent-expectations-final34-r2.json",
+            "sha256": "a3a4aa6379daddf1da1f55c9b7d8bbdd47fc8395229b1d7a565b3fb272e4f09f"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+          "sha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d"
+        },
+        "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+      },
+      "scope": "Complete2048selectedsentinelbinarymasks ×2sanitation ×3householdratios,eachindividualcount0–20sweep,primary13pointexample. Numerical sumonly, risk9cutoffandage70rubrics excluded. Only selected unrounded/raw numerical fields.",
+      "sourceEvidence": {
+        "review": {
+          "file": "reports/review-20261003/root-six-primary-source-review-final34.json",
+          "sha256": "7eb9bcee5678461a6ec6fc8d2ddbec4673ca95423dc4234195add5669d1b6ef1"
+        },
+        "reading": {
+          "edition": "CoelhoSavassi2004 original Table1 and SavassiLageCoelho2012/2013formalization",
+          "evidence": [
+            {
+              "file": "reports/review-20261003/root-source34-primary-r2/coelho-savassi2004-publisher.pdf",
+              "sha256": "cefac9eb7f52d0c73c4c38cc9dce1c838c7fc64253ffab3d6bc3dd75ca9c8314",
+              "personallyReadPages": [
+                5
+              ],
+              "scope": "Visually read Table1 numericweights and greaterthan9classification."
+            },
+            {
+              "file": "reports/review-20261003/root-source34-primary-r2/savassi2013-publisher.pdf",
+              "sha256": "d569d31b4be195c73f986bd717f2877c14a4483fa69b177912047dc9460d99e3",
+              "personallyReadPages": [
+                2,
+                4,
+                5,
+                6
+              ],
+              "scope": "Read weights, perpersonrepetition,13point workedexample,cutoffambiguity and methodological limits; visually read pages2/5."
+            }
+          ],
+          "excluded": [
+            "Family risk classification at9 (primarytable>9, local≥9 variant), age70rubric, medical/social assessment, clinical validation."
+          ]
+        }
+      },
+      "evidencePath": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+      "evidenceSha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d",
+      "independentPeer": {
+        "evidence": {
+          "file": "reports/review-20261003/root-six-occupational-independent-peer-western-final34.json",
+          "sha256": "4a3f28aac8033967298f28a2b1ef66125727f9310b0ba9ea46cf5d44222db784"
+        },
+        "scope": "Own independent primary selected-math peer; source/rubric/right/clinical exclusions retained."
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/escala-de-coelho-savassi/calculator.js",
+          "sha256": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escala-de-coelho-savassi/calculator.js",
+          "sha256": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escala-de-coelho-savassi/calculator.js",
+          "sha256": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31"
+        }
+      ],
+      "qualifications": [
+        "Familyrisk9cutoff, age70rubric and field clinical/social assignment excluded.",
+        "Original54 WAI final-display observations remain pre-repair findings; this bank does not approve final rounded score/level/rubric. Current/future raw.score preserves unrounded sum."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Coelho–Savassi 2004; sistematização 2013; sentinelas por pessoa, saneamento por família; R3 ≥9 como opção local conservadora.",
+    "implementationVersion": "escala-de-coelho-savassi@native-2026-10-04+fc05d6f65af2",
+    "currentMethodSource": "https://www.jmphc.com.br/jmphc/article/view/155",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Cada sentinela individual pontua por pessoa que a apresenta: acamado, deficiência física, deficiência mental e desnutrição grave 3; drogadição e desemprego 2; analfabetismo, menor de 6 meses, maior de 70 anos, hipertensão e diabetes 1. Baixas condições de saneamento: 3 (uma vez por família). Relação morador/cômodo: maior que 1 = 3; igual a 1 = 2; menor que 1 = 0.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "acamado",
+            "label": "Acamados (restritos ao domicílio por incapacidade de locomoção)",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "def_fisica",
+            "label": "Pessoas com deficiência física",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "def_mental",
+            "label": "Pessoas com deficiência mental",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "desnutricao",
+            "label": "Pessoas com desnutrição grave",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "saneamento",
+            "label": "Baixas condições de saneamento no domicílio",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "drogadicao",
+            "label": "Pessoas com drogadição (inclui dependência de álcool)",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "desemprego",
+            "label": "Pessoas desempregadas",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "analfabetismo",
+            "label": "Pessoas analfabetas",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "menor6m",
+            "label": "Crianças menores de 6 meses",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "maior70",
+            "label": "Pessoas com mais de 70 anos",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "has",
+            "label": "Pessoas com hipertensão arterial",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "dm",
+            "label": "Pessoas com diabetes mellitus",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "moradores",
+            "label": "Número de moradores",
+            "type": "num",
+            "min": 1,
+            "max": 40,
+            "unit": "pessoas",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "comodos",
+            "label": "Número de cômodos (inclui banheiro e cozinha)",
+            "type": "num",
+            "min": 1,
+            "max": 40,
+            "unit": "cômodos",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "660569d039cd382a532535ec10bab1b758c18a851adaa6beff449af765e93816"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Coelho FLG, Savassi LCM. Aplicação de Escala de Risco Familiar como instrumento de priorização das Visitas Domiciliares. Rev Bras Med Fam Comunidade, 2004.",
+          "url": "https://doi.org/10.5712/rbmfc1(2)104",
+          "class": "publisher-deposited-bibliography-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publisherDepositedMetadata": {
+            "title": "Aplicação de Escala de Risco Familiar como instrumento de priorização das Visitas Domiciliares",
+            "doi": "10.5712/rbmfc1(2)104",
+            "year": 2004,
+            "publisher": "Sociedade Brasileira de Medicina de Familia e Comunidade (SBMFC)",
+            "journal": "Revista Brasileira de Medicina de Família e Comunidade",
+            "authors": [
+              "Flávio Lúcio G Coelho",
+              "Leonardo Cançado Monteiro Savassi"
+            ],
+            "url": "https://doi.org/10.5712/rbmfc1(2)104"
+          },
+          "publication": {
+            "title": "Aplicação de Escala de Risco Familiar como instrumento de priorização das Visitas Domiciliares",
+            "doi": "10.5712/rbmfc1(2)104",
+            "year": 2004,
+            "publisher": "Sociedade Brasileira de Medicina de Familia e Comunidade (SBMFC)",
+            "journal": "Revista Brasileira de Medicina de Família e Comunidade",
+            "authors": [
+              "Flávio Lúcio G Coelho",
+              "Leonardo Cançado Monteiro Savassi"
+            ],
+            "url": "https://doi.org/10.5712/rbmfc1(2)104"
+          }
+        },
+        {
+          "citation": "Savassi LCM, Lage JL, Coelho FLG. Sistematização de instrumento de estratificação de risco familiar: a Escala de Risco Familiar de Coelho-Savassi. J Manag Prim Health Care, 2013.",
+          "url": "https://doi.org/10.14295/jmphc.v3i2.155",
+          "class": "source-access-inconclusive",
+          "publicationEditionConfirmed": false,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "reason": "Exact DOI/PMID or exact publication title not found in Europe PMC"
+        },
+        {
+          "url": "https://www.jmphc.com.br/jmphc/article/view/155",
+          "edition": "Journal volume 3(2), 2012; online publication 6 January 2013.",
+          "class": "primary-publisher-edition-and-abstract-read",
+          "conferred": "Source confirms systematization; erratum specifies residents divided by rooms, not inverse.",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed"
+        },
+        {
+          "url": "https://www.jmphc.com.br/jmphc/issue/view/9",
+          "edition": "Publisher erratum linked to DOI 10.14295/jmphc.v3i2.155",
+          "class": "primary-publisher-erratum-read",
+          "conferred": "Resident/room ratio direction checked against local documented formula.",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:50:48.730Z",
+        "total": 12520,
+        "passed": 12520,
+        "sourceRowCount": 12520,
+        "uniqueApiInputCount": 12520,
+        "sourceContextCount": 12520,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "9a60b2e9bd4edb0037c2635fc5c68a63be1849de6c5b778110e02d1d16a61ac5",
+          "total": 12520,
+          "bankRowCount": 12520,
+          "uniqueApiInputCount": 12520,
+          "sourceContextCount": 12520,
+          "fullStoredSourceRows": 12520,
+          "localRejectionContractCount": 0,
+          "excludedSourceObservationCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-occupational-independent-expectations-final34-r2.json",
+              "sha256": "a3a4aa6379daddf1da1f55c9b7d8bbdd47fc8395229b1d7a565b3fb272e4f09f"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+            "sha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d"
+          },
+          "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+        },
+        "scope": "Complete2048selectedsentinelbinarymasks ×2sanitation ×3householdratios,eachindividualcount0–20sweep,primary13pointexample. Numerical sumonly, risk9cutoffandage70rubrics excluded. Only selected unrounded/raw numerical fields.",
+        "sourceEvidence": {
+          "review": {
+            "file": "reports/review-20261003/root-six-primary-source-review-final34.json",
+            "sha256": "7eb9bcee5678461a6ec6fc8d2ddbec4673ca95423dc4234195add5669d1b6ef1"
+          },
+          "reading": {
+            "edition": "CoelhoSavassi2004 original Table1 and SavassiLageCoelho2012/2013formalization",
+            "evidence": [
+              {
+                "file": "reports/review-20261003/root-source34-primary-r2/coelho-savassi2004-publisher.pdf",
+                "sha256": "cefac9eb7f52d0c73c4c38cc9dce1c838c7fc64253ffab3d6bc3dd75ca9c8314",
+                "personallyReadPages": [
+                  5
+                ],
+                "scope": "Visually read Table1 numericweights and greaterthan9classification."
+              },
+              {
+                "file": "reports/review-20261003/root-source34-primary-r2/savassi2013-publisher.pdf",
+                "sha256": "d569d31b4be195c73f986bd717f2877c14a4483fa69b177912047dc9460d99e3",
+                "personallyReadPages": [
+                  2,
+                  4,
+                  5,
+                  6
+                ],
+                "scope": "Read weights, perpersonrepetition,13point workedexample,cutoffambiguity and methodological limits; visually read pages2/5."
+              }
+            ],
+            "excluded": [
+              "Family risk classification at9 (primarytable>9, local≥9 variant), age70rubric, medical/social assessment, clinical validation."
+            ]
+          }
+        },
+        "evidencePath": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+        "evidenceSha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d",
+        "independentPeer": {
+          "evidence": {
+            "file": "reports/review-20261003/root-six-occupational-independent-peer-western-final34.json",
+            "sha256": "4a3f28aac8033967298f28a2b1ef66125727f9310b0ba9ea46cf5d44222db784"
+          },
+          "scope": "Own independent primary selected-math peer; source/rubric/right/clinical exclusions retained."
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/escala-de-coelho-savassi/calculator.js",
+            "sha256": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escala-de-coelho-savassi/calculator.js",
+            "sha256": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escala-de-coelho-savassi/calculator.js",
+            "sha256": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31"
+          }
+        ],
+        "qualifications": [
+          "Familyrisk9cutoff, age70rubric and field clinical/social assignment excluded.",
+          "Original54 WAI final-display observations remain pre-repair findings; this bank does not approve final rounded score/level/rubric. Current/future raw.score preserves unrounded sum."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31",
+      "documentaryEditionAmendment": {
+        "recordedAt": "2026-10-04T13:40:42.995Z",
+        "source": "Coelho–Savassi 2004; sistematização 2013; sentinelas por pessoa, saneamento por família; R3 ≥9 como opção local conservadora.",
+        "scope": "Explicit attribution of the implemented variant; not full-method or clinical approval."
+      }
+    },
+    "limits": "A Coelho–Savassi prioriza famílias no contexto da atenção primária brasileira; não estima probabilidade individual de doença e não descreve toda a dinâmica familiar. Conte sentinelas pessoais por pessoa e a condição de saneamento uma vez por família. As tabelas consultadas de 2004 e 2013 escrevem R3 acima de 9 e deixam o escore 9 sem faixa explícita. Esta implementação adota R3 a partir de 9 como opção local conservadora, não como corte literalmente estabelecido nessas tabelas. Confira as definições operacionais de idade e sentinelas e reveja a situação familiar periodicamente.",
+    "limitsEvidence": {
+      "status": "direct-original-table-and-systematization-named-pages-visually-read",
+      "sources": [
+        {
+          "url": "https://rbmfc.org.br/rbmfc/article/download/104/pdf/296",
+          "edition": "Coelho/Savassi2004",
+          "readScope": "Direct original PDF page5,printed23: Table01 sentinel weights and Quadro02 risk ranges visually read. R3 wording is Maior que9, not≥9. Only this named page reviewed; the earlier inherited reading claiming≥9 is superseded.",
+          "capture": "primary-verify-limits-final23/coelho2004-p5.png",
+          "pdfSha256": "cefac9eb7f52d0c73c4c38cc9dce1c838c7fc64253ffab3d6bc3dd75ca9c8314"
+        },
+        {
+          "url": "https://www.jmphc.com.br/jmphc/article/download/155/158/185",
+          "edition": "Savassi2013,systematization",
+          "readScope": "Direct original PDF pages2–5,printed180–183 visually read: Quadro02 Acima de9;family notindividual risk;sentinel definitions/age70complete and≤5months29days;points perperson. No full7page paper claim.",
+          "capture": [
+            "primary-verify-limits-final23/coelho2013-p2.png",
+            "primary-verify-limits-final23/coelho2013-p3.png",
+            "primary-verify-limits-final23/coelho2013-p4.png",
+            "primary-verify-limits-final23/coelho2013-p5.png"
+          ],
+          "pdfSha256": "d569d31b4be195c73f986bd717f2877c14a4483fa69b177912047dc9460d99e3"
+        }
+      ],
+      "populationScope": "Family/household prioritization in Brazilian primary care, not individual disease prediction.",
+      "remainingChecks": [
+        "Score9 ambiguity in original2004/2013 tables remains; local≥9 is an explicit conservative implementation choice, not original verified threshold.",
+        "No new independent clinical approval of local conservative policy.",
+        "Age-count label and operational≥70 definition need wording reconciliation; not a numeric age-input calculation."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escala-de-coelho-savassi/calculator.js",
+    "bytes": 6900,
+    "sha256": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "a66f95d54238ee6ed2945e0b9be9b7859e49904acf2b16bb80cef30f41ebb91c",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "de8f5bdf900753da2bbf349251e841c4ad067a2f08f2a9548cc25812ed021606",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "de8f5bdf900753da2bbf349251e841c4ad067a2f08f2a9548cc25812ed021606",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

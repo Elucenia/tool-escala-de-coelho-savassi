@@ -1,7 +1,10 @@
 [
   {
-    "label": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
-    "input": {
+    "id": "escala-de-coelho-savassi",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+    "originalInput": {
       "acamado": 2,
       "def_fisica": 1,
       "maior70": 1,
@@ -9,69 +12,142 @@
       "analfabetismo": 2,
       "moradores": 2,
       "comodos": 5
+    },
+    "input": {
+      "acamado": 2,
+      "def_fisica": 1,
+      "maior70": 1,
+      "has": 1,
+      "analfabetismo": 2,
+      "moradores": 2,
+      "comodos": 5,
+      "saneamento": false
     },
     "expected": {
       "score": 13,
       "level": "high",
       "verdict": "R3"
     },
-    "originalInput": {
-      "acamado": 2,
-      "def_fisica": 1,
-      "maior70": 1,
-      "has": 1,
-      "analfabetismo": 2,
-      "moradores": 2,
-      "comodos": 5
+    "recordedResult": {
+      "main": [
+        "13",
+        "pontos"
+      ],
+      "label": "Escala de Coelho-Savassi",
+      "raw": {
+        "score": 13,
+        "ratio": 0.4
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
-    "input": {
+    "id": "escala-de-coelho-savassi",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+    "originalInput": {
       "has": 1,
       "dm": 1,
       "maior70": 1,
       "moradores": 4,
       "comodos": 4
+    },
+    "input": {
+      "has": 1,
+      "dm": 1,
+      "maior70": 1,
+      "moradores": 4,
+      "comodos": 4,
+      "saneamento": false
     },
     "expected": {
       "score": 5,
       "level": "low",
       "verdict": "R1"
     },
-    "originalInput": {
-      "has": 1,
-      "dm": 1,
-      "maior70": 1,
-      "moradores": 4,
-      "comodos": 4
+    "recordedResult": {
+      "main": [
+        "5",
+        "pontos"
+      ],
+      "label": "Escala de Coelho-Savassi",
+      "raw": {
+        "score": 5,
+        "ratio": 1
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
-    "input": {
+    "id": "escala-de-coelho-savassi",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+    "originalInput": {
       "desemprego": 1,
       "analfabetismo": 2,
       "moradores": 5,
       "comodos": 4
+    },
+    "input": {
+      "desemprego": 1,
+      "analfabetismo": 2,
+      "moradores": 5,
+      "comodos": 4,
+      "saneamento": false
     },
     "expected": {
       "score": 7,
       "level": "mid",
       "verdict": "R2"
     },
-    "originalInput": {
-      "desemprego": 1,
-      "analfabetismo": 2,
-      "moradores": 5,
-      "comodos": 4
+    "recordedResult": {
+      "main": [
+        "7",
+        "pontos"
+      ],
+      "label": "Escala de Coelho-Savassi",
+      "raw": {
+        "score": 7,
+        "ratio": 1.25
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+    "id": "escala-de-coelho-savassi",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+    "originalInput": {
+      "saneamento": true,
+      "drogadicao": 1,
+      "dm": 1,
+      "moradores": 6,
+      "comodos": 3
+    },
     "input": {
       "saneamento": true,
       "drogadicao": 1,
@@ -83,32 +159,65 @@
       "score": 9,
       "level": "high"
     },
-    "originalInput": {
-      "saneamento": true,
-      "drogadicao": 1,
-      "dm": 1,
-      "moradores": 6,
-      "comodos": 3
+    "recordedResult": {
+      "main": [
+        "9",
+        "pontos"
+      ],
+      "label": "Escala de Coelho-Savassi",
+      "raw": {
+        "score": 9,
+        "ratio": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
-    "input": {
+    "id": "escala-de-coelho-savassi",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+    "originalInput": {
       "has": 1,
       "moradores": 2,
       "comodos": 3
+    },
+    "input": {
+      "has": 1,
+      "moradores": 2,
+      "comodos": 3,
+      "saneamento": false
     },
     "expected": {
       "score": 1,
       "level": "low",
       "verdict": "não atinge"
     },
-    "originalInput": {
-      "has": 1,
-      "moradores": 2,
-      "comodos": 3
+    "recordedResult": {
+      "main": [
+        "1",
+        "ponto"
+      ],
+      "label": "Escala de Coelho-Savassi",
+      "raw": {
+        "score": 1,
+        "ratio": 0.6666666666666666
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
