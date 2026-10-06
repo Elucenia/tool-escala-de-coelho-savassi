@@ -1,0 +1,390 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escala-de-coelho-savassi",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "6a5eb6d6067a7467b39a75a41a01ad32957bfec7",
+    "oldEngineSha256": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31",
+    "currentEngineSha256": "c567f69ed950e47a56d8bae8f6c40f5a4fc88983e9e6b96dfb72fe1d7e91ec86"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+      "input": {
+        "acamado": 2,
+        "def_fisica": 1,
+        "maior70": 1,
+        "has": 1,
+        "analfabetismo": 2,
+        "moradores": 2,
+        "comodos": 5,
+        "saneamento": false
+      },
+      "publicOutput": {
+        "id": "escala-de-coelho-savassi",
+        "main": [
+          "13",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "raw": {
+          "score": 13,
+          "ratio": 0.4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 13,
+        "level": "high",
+        "verdict": "R3"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "13",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "level": "high",
+        "verdict": "R3: risco máximo",
+        "rows": [
+          [
+            "Relação morador/cômodo",
+            "0,40 (0 pontos)"
+          ],
+          [
+            "Sentinelas de 3 pontos",
+            "3 ocorrência(s)"
+          ],
+          [
+            "Sentinelas de 2 pontos",
+            "0 ocorrência(s)"
+          ],
+          [
+            "Sentinelas de 1 ponto",
+            "4 ocorrência(s)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "score": 13,
+          "ratio": 0.4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+      "input": {
+        "has": 1,
+        "dm": 1,
+        "maior70": 1,
+        "moradores": 4,
+        "comodos": 4,
+        "saneamento": false
+      },
+      "publicOutput": {
+        "id": "escala-de-coelho-savassi",
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "raw": {
+          "score": 5,
+          "ratio": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "level": "low",
+        "verdict": "R1"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "level": "low",
+        "verdict": "R1: risco menor",
+        "rows": [
+          [
+            "Relação morador/cômodo",
+            "1,00 (2 pontos)"
+          ],
+          [
+            "Sentinelas de 3 pontos",
+            "0 ocorrência(s)"
+          ],
+          [
+            "Sentinelas de 2 pontos",
+            "0 ocorrência(s)"
+          ],
+          [
+            "Sentinelas de 1 ponto",
+            "3 ocorrência(s)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "score": 5,
+          "ratio": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+      "input": {
+        "desemprego": 1,
+        "analfabetismo": 2,
+        "moradores": 5,
+        "comodos": 4,
+        "saneamento": false
+      },
+      "publicOutput": {
+        "id": "escala-de-coelho-savassi",
+        "main": [
+          "7",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "raw": {
+          "score": 7,
+          "ratio": 1.25
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 7,
+        "level": "mid",
+        "verdict": "R2"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "level": "mid",
+        "verdict": "R2: risco médio",
+        "rows": [
+          [
+            "Relação morador/cômodo",
+            "1,25 (3 pontos)"
+          ],
+          [
+            "Sentinelas de 3 pontos",
+            "0 ocorrência(s)"
+          ],
+          [
+            "Sentinelas de 2 pontos",
+            "1 ocorrência(s)"
+          ],
+          [
+            "Sentinelas de 1 ponto",
+            "2 ocorrência(s)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "score": 7,
+          "ratio": 1.25
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+      "input": {
+        "saneamento": true,
+        "drogadicao": 1,
+        "dm": 1,
+        "moradores": 6,
+        "comodos": 3
+      },
+      "publicOutput": {
+        "id": "escala-de-coelho-savassi",
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "raw": {
+          "score": 9,
+          "ratio": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 9,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "level": "high",
+        "verdict": "R3: risco máximo",
+        "rows": [
+          [
+            "Relação morador/cômodo",
+            "2,00 (3 pontos)"
+          ],
+          [
+            "Sentinelas de 3 pontos",
+            "1 ocorrência(s)"
+          ],
+          [
+            "Sentinelas de 2 pontos",
+            "1 ocorrência(s)"
+          ],
+          [
+            "Sentinelas de 1 ponto",
+            "1 ocorrência(s)"
+          ]
+        ],
+        "note": "As tabelas de 2004 e 2013 indicam R3 acima de 9; o escore 9 fica sem faixa explícita. Nesta implementação, 9 é classificado como R3 por opção local conservadora.",
+        "raw": {
+          "score": 9,
+          "ratio": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+      "input": {
+        "has": 1,
+        "moradores": 2,
+        "comodos": 3,
+        "saneamento": false
+      },
+      "publicOutput": {
+        "id": "escala-de-coelho-savassi",
+        "main": [
+          "1",
+          "ponto"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "raw": {
+          "score": 1,
+          "ratio": 0.6666666666666666
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 1,
+        "level": "low",
+        "verdict": "não atinge"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1",
+          "ponto"
+        ],
+        "label": "Escala de Coelho-Savassi",
+        "level": "low",
+        "verdict": "Abaixo de 5 pontos: não atinge a classe R1",
+        "rows": [
+          [
+            "Relação morador/cômodo",
+            "0,67 (0 pontos)"
+          ],
+          [
+            "Sentinelas de 3 pontos",
+            "0 ocorrência(s)"
+          ],
+          [
+            "Sentinelas de 2 pontos",
+            "0 ocorrência(s)"
+          ],
+          [
+            "Sentinelas de 1 ponto",
+            "1 ocorrência(s)"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "score": 1,
+          "ratio": 0.6666666666666666
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

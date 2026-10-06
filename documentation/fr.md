@@ -141,3 +141,69 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+R3 : risque maximal
+
+| Détails du résultat | |
+| --- | --- |
+| Rapport habitants/pièce | 0,40 (0 points) |
+| Sentinelles de 3 points | 3 occurrence(s) |
+| Sentinelles de 2 points | 0 occurrence(s) |
+| Sentinelles de 1 point | 4 occurrence(s) |
+
+
+### 2
+
+R1 : risque moindre
+
+| Détails du résultat | |
+| --- | --- |
+| Rapport habitants/pièce | 1,00 (2 points) |
+| Sentinelles de 3 points | 0 occurrence(s) |
+| Sentinelles de 2 points | 0 occurrence(s) |
+| Sentinelles de 1 point | 3 occurrence(s) |
+
+
+### 3
+
+R2 : risque moyen
+
+| Détails du résultat | |
+| --- | --- |
+| Rapport habitants/pièce | 1,25 (3 points) |
+| Sentinelles de 3 points | 0 occurrence(s) |
+| Sentinelles de 2 points | 1 occurrence(s) |
+| Sentinelles de 1 point | 2 occurrence(s) |
+
+
+### 4
+
+R3 : risque maximal
+
+| Détails du résultat | |
+| --- | --- |
+| Rapport habitants/pièce | 2,00 (3 points) |
+| Sentinelles de 3 points | 1 occurrence(s) |
+| Sentinelles de 2 points | 1 occurrence(s) |
+| Sentinelles de 1 point | 1 occurrence(s) |
+
+Les tableaux de 2004 et 2013 indiquent R3 au-dessus de 9 ; le score 9 n’a pas de catégorie explicite. Dans cette implémentation, 9 est classé R3 par choix local conservateur.
+
+
+### 5
+
+En dessous de 5 points : n’atteint pas la classe R1
+
+| Détails du résultat | |
+| --- | --- |
+| Rapport habitants/pièce | 0,67 (0 points) |
+| Sentinelles de 3 points | 0 occurrence(s) |
+| Sentinelles de 2 points | 0 occurrence(s) |
+| Sentinelles de 1 point | 1 occurrence(s) |
+

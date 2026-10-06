@@ -141,3 +141,69 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+R3: maximum risk
+
+| Result details | |
+| --- | --- |
+| Resident/room ratio | 0.40 (0 points) |
+| 3-point sentinel items | 3 occurrence(s) |
+| 2-point sentinel items | 0 occurrence(s) |
+| 1-point sentinel items | 4 occurrence(s) |
+
+
+### 2
+
+R1: lower risk
+
+| Result details | |
+| --- | --- |
+| Resident/room ratio | 1.00 (2 points) |
+| 3-point sentinel items | 0 occurrence(s) |
+| 2-point sentinel items | 0 occurrence(s) |
+| 1-point sentinel items | 3 occurrence(s) |
+
+
+### 3
+
+R2: medium risk
+
+| Result details | |
+| --- | --- |
+| Resident/room ratio | 1.25 (3 points) |
+| 3-point sentinel items | 0 occurrence(s) |
+| 2-point sentinel items | 1 occurrence(s) |
+| 1-point sentinel items | 2 occurrence(s) |
+
+
+### 4
+
+R3: maximum risk
+
+| Result details | |
+| --- | --- |
+| Resident/room ratio | 2.00 (3 points) |
+| 3-point sentinel items | 1 occurrence(s) |
+| 2-point sentinel items | 1 occurrence(s) |
+| 1-point sentinel items | 1 occurrence(s) |
+
+The 2004 and 2013 tables state R3 above 9; score 9 has no explicit range. In this implementation, 9 is classified as R3 as a conservative local choice.
+
+
+### 5
+
+Below 5 points: does not meet class R1
+
+| Result details | |
+| --- | --- |
+| Resident/room ratio | 0.67 (0 points) |
+| 3-point sentinel items | 0 occurrence(s) |
+| 2-point sentinel items | 0 occurrence(s) |
+| 1-point sentinel items | 1 occurrence(s) |
+

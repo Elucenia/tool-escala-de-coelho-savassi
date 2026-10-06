@@ -141,3 +141,69 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+R3: riesgo máximo
+
+| Detalles del resultado | |
+| --- | --- |
+| Relación residente/habitación | 0,40 (0 puntos) |
+| Centinelas de 3 puntos | 3 ocurrencia(s) |
+| Centinelas de 2 puntos | 0 ocurrencia(s) |
+| Centinelas de 1 punto | 4 ocurrencia(s) |
+
+
+### 2
+
+R1: riesgo menor
+
+| Detalles del resultado | |
+| --- | --- |
+| Relación residente/habitación | 1,00 (2 puntos) |
+| Centinelas de 3 puntos | 0 ocurrencia(s) |
+| Centinelas de 2 puntos | 0 ocurrencia(s) |
+| Centinelas de 1 punto | 3 ocurrencia(s) |
+
+
+### 3
+
+R2: riesgo medio
+
+| Detalles del resultado | |
+| --- | --- |
+| Relación residente/habitación | 1,25 (3 puntos) |
+| Centinelas de 3 puntos | 0 ocurrencia(s) |
+| Centinelas de 2 puntos | 1 ocurrencia(s) |
+| Centinelas de 1 punto | 2 ocurrencia(s) |
+
+
+### 4
+
+R3: riesgo máximo
+
+| Detalles del resultado | |
+| --- | --- |
+| Relación residente/habitación | 2,00 (3 puntos) |
+| Centinelas de 3 puntos | 1 ocurrencia(s) |
+| Centinelas de 2 puntos | 1 ocurrencia(s) |
+| Centinelas de 1 punto | 1 ocurrencia(s) |
+
+Las tablas de 2004 y 2013 indican R3 por encima de 9; el puntaje 9 no tiene una categoría explícita. En esta implementación, 9 se clasifica como R3 por una opción local conservadora.
+
+
+### 5
+
+Por debajo de 5 puntos: no alcanza la clase R1
+
+| Detalles del resultado | |
+| --- | --- |
+| Relación residente/habitación | 0,67 (0 puntos) |
+| Centinelas de 3 puntos | 0 ocurrencia(s) |
+| Centinelas de 2 puntos | 0 ocurrencia(s) |
+| Centinelas de 1 punto | 1 ocurrencia(s) |
+

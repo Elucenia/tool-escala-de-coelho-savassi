@@ -141,3 +141,69 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+R3: maximales Risiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| Bewohner-/Zimmer-Verhältnis | 0,40 (0 Punkte) |
+| 3-Punkte-Sentinel-Einträge | 3 Vorkommen |
+| 2-Punkte-Sentinel-Einträge | 0 Vorkommen |
+| 1-Punkt-Sentinel-Einträge | 4 Vorkommen |
+
+
+### 2
+
+R1: geringeres Risiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| Bewohner-/Zimmer-Verhältnis | 1,00 (2 Punkte) |
+| 3-Punkte-Sentinel-Einträge | 0 Vorkommen |
+| 2-Punkte-Sentinel-Einträge | 0 Vorkommen |
+| 1-Punkt-Sentinel-Einträge | 3 Vorkommen |
+
+
+### 3
+
+R2: mittleres Risiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| Bewohner-/Zimmer-Verhältnis | 1,25 (3 Punkte) |
+| 3-Punkte-Sentinel-Einträge | 0 Vorkommen |
+| 2-Punkte-Sentinel-Einträge | 1 Vorkommen |
+| 1-Punkt-Sentinel-Einträge | 2 Vorkommen |
+
+
+### 4
+
+R3: maximales Risiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| Bewohner-/Zimmer-Verhältnis | 2,00 (3 Punkte) |
+| 3-Punkte-Sentinel-Einträge | 1 Vorkommen |
+| 2-Punkte-Sentinel-Einträge | 1 Vorkommen |
+| 1-Punkt-Sentinel-Einträge | 1 Vorkommen |
+
+Die Tabellen von 2004 und 2013 nennen R3 oberhalb von 9; für 9 ist kein Bereich ausdrücklich angegeben. Diese Implementierung ordnet 9 als konservative lokale Entscheidung R3 zu.
+
+
+### 5
+
+Unter 5 Punkten: erreicht nicht die Klasse R1
+
+| Ergebnisdetails | |
+| --- | --- |
+| Bewohner-/Zimmer-Verhältnis | 0,67 (0 Punkte) |
+| 3-Punkte-Sentinel-Einträge | 0 Vorkommen |
+| 2-Punkte-Sentinel-Einträge | 0 Vorkommen |
+| 1-Punkt-Sentinel-Einträge | 1 Vorkommen |
+

@@ -385,7 +385,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Coelho–Savassi 2004; sistematização 2013; sentinelas por pessoa, saneamento por família; R3 ≥9 como opção local conservadora.",
-    "implementationVersion": "escala-de-coelho-savassi@native-2026-10-04+fc05d6f65af2",
+    "implementationVersion": "escala-de-coelho-savassi@native-2026-10-05+c567f69ed950",
     "currentMethodSource": "https://www.jmphc.com.br/jmphc/article/view/155",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -698,12 +698,40 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31",
+      "implementationHash": "c567f69ed950e47a56d8bae8f6c40f5a4fc88983e9e6b96dfb72fe1d7e91ec86",
       "documentaryEditionAmendment": {
         "recordedAt": "2026-10-04T13:40:42.995Z",
         "source": "Coelho–Savassi 2004; sistematização 2013; sentinelas por pessoa, saneamento por família; R3 ≥9 como opção local conservadora.",
         "scope": "Explicit attribution of the implemented variant; not full-method or clinical approval."
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escala-de-coelho-savassi@native-2026-10-04+fc05d6f65af2",
+          "previousImplementationHash": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31",
+          "implementationHash": "c567f69ed950e47a56d8bae8f6c40f5a4fc88983e9e6b96dfb72fe1d7e91ec86",
+          "scientificBodySha256": "6aeb6240f3e3141b255772cd83d168056ba82b0262cfa66f32716d0bb1721f64",
+          "metadataContractHash": "660569d039cd382a532535ec10bab1b758c18a851adaa6beff449af765e93816",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A Coelho–Savassi prioriza famílias no contexto da atenção primária brasileira; não estima probabilidade individual de doença e não descreve toda a dinâmica familiar. Conte sentinelas pessoais por pessoa e a condição de saneamento uma vez por família. As tabelas consultadas de 2004 e 2013 escrevem R3 acima de 9 e deixam o escore 9 sem faixa explícita. Esta implementação adota R3 a partir de 9 como opção local conservadora, não como corte literalmente estabelecido nessas tabelas. Confira as definições operacionais de idade e sentinelas e reveja a situação familiar periodicamente.",
     "limitsEvidence": {
@@ -743,20 +771,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escala-de-coelho-savassi/calculator.js",
-    "bytes": 6900,
-    "sha256": "fc05d6f65af23f55b13fd4bc3c92e67982cc1789db1724da0a316d702345fb31"
+    "bytes": 7105,
+    "sha256": "c567f69ed950e47a56d8bae8f6c40f5a4fc88983e9e6b96dfb72fe1d7e91ec86"
   },
-  "sourceToolSha256": "a66f95d54238ee6ed2945e0b9be9b7859e49904acf2b16bb80cef30f41ebb91c",
+  "sourceToolSha256": "1d48ff7cd74da2012830e2bd013a087f3540f383094cb950c25f65672f601783",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "de8f5bdf900753da2bbf349251e841c4ad067a2f08f2a9548cc25812ed021606",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "de8f5bdf900753da2bbf349251e841c4ad067a2f08f2a9548cc25812ed021606",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

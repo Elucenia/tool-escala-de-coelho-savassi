@@ -141,3 +141,69 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+R3: rischio massimo
+
+| Dettagli del risultato | |
+| --- | --- |
+| Rapporto residente/stanza | 0,40 (0 punti) |
+| Sentinelle da 3 punti | 3 occorrenza/e |
+| Sentinelle da 2 punti | 0 occorrenza/e |
+| Sentinelle da 1 punto | 4 occorrenza/e |
+
+
+### 2
+
+R1: rischio minore
+
+| Dettagli del risultato | |
+| --- | --- |
+| Rapporto residente/stanza | 1,00 (2 punti) |
+| Sentinelle da 3 punti | 0 occorrenza/e |
+| Sentinelle da 2 punti | 0 occorrenza/e |
+| Sentinelle da 1 punto | 3 occorrenza/e |
+
+
+### 3
+
+R2: rischio medio
+
+| Dettagli del risultato | |
+| --- | --- |
+| Rapporto residente/stanza | 1,25 (3 punti) |
+| Sentinelle da 3 punti | 0 occorrenza/e |
+| Sentinelle da 2 punti | 1 occorrenza/e |
+| Sentinelle da 1 punto | 2 occorrenza/e |
+
+
+### 4
+
+R3: rischio massimo
+
+| Dettagli del risultato | |
+| --- | --- |
+| Rapporto residente/stanza | 2,00 (3 punti) |
+| Sentinelle da 3 punti | 1 occorrenza/e |
+| Sentinelle da 2 punti | 1 occorrenza/e |
+| Sentinelle da 1 punto | 1 occorrenza/e |
+
+Le tabelle del 2004 e del 2013 indicano R3 oltre 9; il punteggio 9 non ha una fascia esplicita. In questa implementazione, 9 è classificato R3 per una scelta locale conservativa.
+
+
+### 5
+
+Sotto 5 punti: non raggiunge la classe R1
+
+| Dettagli del risultato | |
+| --- | --- |
+| Rapporto residente/stanza | 0,67 (0 punti) |
+| Sentinelle da 3 punti | 0 occorrenza/e |
+| Sentinelle da 2 punti | 0 occorrenza/e |
+| Sentinelle da 1 punto | 1 occorrenza/e |
+

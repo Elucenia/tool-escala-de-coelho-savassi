@@ -1,0 +1,3912 @@
+{
+  "id": "escala-de-coelho-savassi",
+  "implementationVersion": "escala-de-coelho-savassi@native-2026-10-05+c567f69ed950",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Relação morador/cômodo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,40 (0 pontos)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelas de 3 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelas de 2 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelas de 1 ponto",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: risco máximo",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Relação morador/cômodo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,00 (2 pontos)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelas de 3 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelas de 2 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelas de 1 ponto",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R1: risco menor",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Relação morador/cômodo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,25 (3 pontos)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelas de 3 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelas de 2 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelas de 1 ponto",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R2: risco médio",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Relação morador/cômodo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2,00 (3 pontos)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelas de 3 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelas de 2 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelas de 1 ponto",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: risco máximo",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "As tabelas de 2004 e 2013 indicam R3 acima de 9; o escore 9 fica sem faixa explícita. Nesta implementação, 9 é classificado como R3 por opção local conservadora.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Relação morador/cômodo",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,67 (0 pontos)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelas de 3 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelas de 2 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelas de 1 ponto",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1 ocorrência(s)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Abaixo de 5 pontos: não atinge a classe R1",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Resident/room ratio",
+                "locale": "en",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0.40 (0 points)",
+                "locale": "en",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.4,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "3 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "4 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: maximum risk",
+            "locale": "en",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Resident/room ratio",
+                "locale": "en",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1.00 (2 points)",
+                "locale": "en",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1,
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "3 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R1: lower risk",
+            "locale": "en",
+            "template": "documented-authored-c7d75a18f258bbe30167"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Resident/room ratio",
+                "locale": "en",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1.25 (3 points)",
+                "locale": "en",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1.25,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "2 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R2: medium risk",
+            "locale": "en",
+            "template": "documented-authored-9ae9d546bcab5e483281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Resident/room ratio",
+                "locale": "en",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "2.00 (3 points)",
+                "locale": "en",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  2,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "1 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: maximum risk",
+            "locale": "en",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "note": {
+            "text": "The 2004 and 2013 tables state R3 above 9; score 9 has no explicit range. In this implementation, 9 is classified as R3 as a conservative local choice.",
+            "locale": "en",
+            "template": "documented-authored-ea16af942211afe8591e"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Resident/room ratio",
+                "locale": "en",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0.67 (0 points)",
+                "locale": "en",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.67,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-point sentinel items",
+                "locale": "en",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 occurrence(s)",
+                "locale": "en",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Below 5 points: does not meet class R1",
+            "locale": "en",
+            "template": "documented-authored-76e05a5bcbe0d576d575"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Relación residente/habitación",
+                "locale": "es",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0,40 (0 puntos)",
+                "locale": "es",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.4,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Centinelas de 3 puntos",
+                "locale": "es",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "3 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Centinelas de 2 puntos",
+                "locale": "es",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Centinelas de 1 punto",
+                "locale": "es",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "4 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: riesgo máximo",
+            "locale": "es",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Relación residente/habitación",
+                "locale": "es",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1,00 (2 puntos)",
+                "locale": "es",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1,
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Centinelas de 3 puntos",
+                "locale": "es",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Centinelas de 2 puntos",
+                "locale": "es",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Centinelas de 1 punto",
+                "locale": "es",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "3 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R1: riesgo menor",
+            "locale": "es",
+            "template": "documented-authored-c7d75a18f258bbe30167"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Relación residente/habitación",
+                "locale": "es",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1,25 (3 puntos)",
+                "locale": "es",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1.25,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Centinelas de 3 puntos",
+                "locale": "es",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Centinelas de 2 puntos",
+                "locale": "es",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Centinelas de 1 punto",
+                "locale": "es",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "2 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R2: riesgo medio",
+            "locale": "es",
+            "template": "documented-authored-9ae9d546bcab5e483281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Relación residente/habitación",
+                "locale": "es",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "2,00 (3 puntos)",
+                "locale": "es",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  2,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Centinelas de 3 puntos",
+                "locale": "es",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "1 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Centinelas de 2 puntos",
+                "locale": "es",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Centinelas de 1 punto",
+                "locale": "es",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: riesgo máximo",
+            "locale": "es",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "note": {
+            "text": "Las tablas de 2004 y 2013 indican R3 por encima de 9; el puntaje 9 no tiene una categoría explícita. En esta implementación, 9 se clasifica como R3 por una opción local conservadora.",
+            "locale": "es",
+            "template": "documented-authored-ea16af942211afe8591e"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Relación residente/habitación",
+                "locale": "es",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0,67 (0 puntos)",
+                "locale": "es",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.67,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Centinelas de 3 puntos",
+                "locale": "es",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Centinelas de 2 puntos",
+                "locale": "es",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Centinelas de 1 punto",
+                "locale": "es",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 ocurrencia(s)",
+                "locale": "es",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Por debajo de 5 puntos: no alcanza la clase R1",
+            "locale": "es",
+            "template": "documented-authored-76e05a5bcbe0d576d575"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapport habitants/pièce",
+                "locale": "fr",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0,40 (0 points)",
+                "locale": "fr",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.4,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelles de 3 points",
+                "locale": "fr",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "3 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelles de 2 points",
+                "locale": "fr",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelles de 1 point",
+                "locale": "fr",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "4 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3 : risque maximal",
+            "locale": "fr",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapport habitants/pièce",
+                "locale": "fr",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1,00 (2 points)",
+                "locale": "fr",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1,
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelles de 3 points",
+                "locale": "fr",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelles de 2 points",
+                "locale": "fr",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelles de 1 point",
+                "locale": "fr",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "3 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R1 : risque moindre",
+            "locale": "fr",
+            "template": "documented-authored-c7d75a18f258bbe30167"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapport habitants/pièce",
+                "locale": "fr",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1,25 (3 points)",
+                "locale": "fr",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1.25,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelles de 3 points",
+                "locale": "fr",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelles de 2 points",
+                "locale": "fr",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelles de 1 point",
+                "locale": "fr",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "2 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R2 : risque moyen",
+            "locale": "fr",
+            "template": "documented-authored-9ae9d546bcab5e483281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapport habitants/pièce",
+                "locale": "fr",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "2,00 (3 points)",
+                "locale": "fr",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  2,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelles de 3 points",
+                "locale": "fr",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "1 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelles de 2 points",
+                "locale": "fr",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelles de 1 point",
+                "locale": "fr",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3 : risque maximal",
+            "locale": "fr",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "note": {
+            "text": "Les tableaux de 2004 et 2013 indiquent R3 au-dessus de 9 ; le score 9 n’a pas de catégorie explicite. Dans cette implémentation, 9 est classé R3 par choix local conservateur.",
+            "locale": "fr",
+            "template": "documented-authored-ea16af942211afe8591e"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapport habitants/pièce",
+                "locale": "fr",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0,67 (0 points)",
+                "locale": "fr",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.67,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelles de 3 points",
+                "locale": "fr",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelles de 2 points",
+                "locale": "fr",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelles de 1 point",
+                "locale": "fr",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 occurrence(s)",
+                "locale": "fr",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "En dessous de 5 points : n’atteint pas la classe R1",
+            "locale": "fr",
+            "template": "documented-authored-76e05a5bcbe0d576d575"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Bewohner-/Zimmer-Verhältnis",
+                "locale": "de",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0,40 (0 Punkte)",
+                "locale": "de",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.4,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-Punkte-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "3 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-Punkte-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-Punkt-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "4 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: maximales Risiko",
+            "locale": "de",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Bewohner-/Zimmer-Verhältnis",
+                "locale": "de",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1,00 (2 Punkte)",
+                "locale": "de",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1,
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-Punkte-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-Punkte-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-Punkt-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "3 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R1: geringeres Risiko",
+            "locale": "de",
+            "template": "documented-authored-c7d75a18f258bbe30167"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Bewohner-/Zimmer-Verhältnis",
+                "locale": "de",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1,25 (3 Punkte)",
+                "locale": "de",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1.25,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-Punkte-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-Punkte-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-Punkt-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "2 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R2: mittleres Risiko",
+            "locale": "de",
+            "template": "documented-authored-9ae9d546bcab5e483281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Bewohner-/Zimmer-Verhältnis",
+                "locale": "de",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "2,00 (3 Punkte)",
+                "locale": "de",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  2,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-Punkte-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "1 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-Punkte-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-Punkt-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: maximales Risiko",
+            "locale": "de",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "note": {
+            "text": "Die Tabellen von 2004 und 2013 nennen R3 oberhalb von 9; für 9 ist kein Bereich ausdrücklich angegeben. Diese Implementierung ordnet 9 als konservative lokale Entscheidung R3 zu.",
+            "locale": "de",
+            "template": "documented-authored-ea16af942211afe8591e"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Bewohner-/Zimmer-Verhältnis",
+                "locale": "de",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0,67 (0 Punkte)",
+                "locale": "de",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.67,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-Punkte-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-Punkte-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-Punkt-Sentinel-Einträge",
+                "locale": "de",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 Vorkommen",
+                "locale": "de",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Unter 5 Punkten: erreicht nicht die Klasse R1",
+            "locale": "de",
+            "template": "documented-authored-76e05a5bcbe0d576d575"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapporto residente/stanza",
+                "locale": "it",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0,40 (0 punti)",
+                "locale": "it",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.4,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelle da 3 punti",
+                "locale": "it",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "3 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelle da 2 punti",
+                "locale": "it",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelle da 1 punto",
+                "locale": "it",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "4 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: rischio massimo",
+            "locale": "it",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapporto residente/stanza",
+                "locale": "it",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1,00 (2 punti)",
+                "locale": "it",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1,
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelle da 3 punti",
+                "locale": "it",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelle da 2 punti",
+                "locale": "it",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelle da 1 punto",
+                "locale": "it",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "3 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R1: rischio minore",
+            "locale": "it",
+            "template": "documented-authored-c7d75a18f258bbe30167"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapporto residente/stanza",
+                "locale": "it",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1,25 (3 punti)",
+                "locale": "it",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1.25,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelle da 3 punti",
+                "locale": "it",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelle da 2 punti",
+                "locale": "it",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelle da 1 punto",
+                "locale": "it",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "2 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R2: rischio medio",
+            "locale": "it",
+            "template": "documented-authored-9ae9d546bcab5e483281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapporto residente/stanza",
+                "locale": "it",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "2,00 (3 punti)",
+                "locale": "it",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  2,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelle da 3 punti",
+                "locale": "it",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "1 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelle da 2 punti",
+                "locale": "it",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelle da 1 punto",
+                "locale": "it",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: rischio massimo",
+            "locale": "it",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "note": {
+            "text": "Le tabelle del 2004 e del 2013 indicano R3 oltre 9; il punteggio 9 non ha una fascia esplicita. In questa implementazione, 9 è classificato R3 per una scelta locale conservativa.",
+            "locale": "it",
+            "template": "documented-authored-ea16af942211afe8591e"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapporto residente/stanza",
+                "locale": "it",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0,67 (0 punti)",
+                "locale": "it",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.67,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Sentinelle da 3 punti",
+                "locale": "it",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Sentinelle da 2 punti",
+                "locale": "it",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sentinelle da 1 punto",
+                "locale": "it",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 occorrenza/e",
+                "locale": "it",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sotto 5 punti: non raggiunge la classe R1",
+            "locale": "it",
+            "template": "documented-authored-76e05a5bcbe0d576d575"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نسبة المقيم/الغرفة",
+                "locale": "ar",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "٠٫٤٠ (٠ نقاط)",
+                "locale": "ar",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.4,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "بنود حارس 3 نقاط",
+                "locale": "ar",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "٣ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "بنود حارس 2 نقطة",
+                "locale": "ar",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "٠ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "بنود حارس 1 نقطة",
+                "locale": "ar",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "٤ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: خطر أقصى",
+            "locale": "ar",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نسبة المقيم/الغرفة",
+                "locale": "ar",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "١٫٠٠ (٢ نقاط)",
+                "locale": "ar",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1,
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "بنود حارس 3 نقاط",
+                "locale": "ar",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "٠ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "بنود حارس 2 نقطة",
+                "locale": "ar",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "٠ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "بنود حارس 1 نقطة",
+                "locale": "ar",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "٣ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R1: خطر أقل",
+            "locale": "ar",
+            "template": "documented-authored-c7d75a18f258bbe30167"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نسبة المقيم/الغرفة",
+                "locale": "ar",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "١٫٢٥ (٣ نقاط)",
+                "locale": "ar",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1.25,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "بنود حارس 3 نقاط",
+                "locale": "ar",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "٠ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "بنود حارس 2 نقطة",
+                "locale": "ar",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "١ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "بنود حارس 1 نقطة",
+                "locale": "ar",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "٢ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R2: خطر متوسط",
+            "locale": "ar",
+            "template": "documented-authored-9ae9d546bcab5e483281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نسبة المقيم/الغرفة",
+                "locale": "ar",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "٢٫٠٠ (٣ نقاط)",
+                "locale": "ar",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  2,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "بنود حارس 3 نقاط",
+                "locale": "ar",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "١ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "بنود حارس 2 نقطة",
+                "locale": "ar",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "١ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "بنود حارس 1 نقطة",
+                "locale": "ar",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "١ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: خطر أقصى",
+            "locale": "ar",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "note": {
+            "text": "تشير جداول 2004 و2013 إلى R3 أعلى من 9؛ ولا توجد فئة صريحة للدرجة 9. في هذا التنفيذ تُصنّف 9 ضمن R3 كخيار محلي محافظ.",
+            "locale": "ar",
+            "template": "documented-authored-ea16af942211afe8591e"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نسبة المقيم/الغرفة",
+                "locale": "ar",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "٠٫٦٧ (٠ نقاط)",
+                "locale": "ar",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.67,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "بنود حارس 3 نقاط",
+                "locale": "ar",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "٠ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "بنود حارس 2 نقطة",
+                "locale": "ar",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "٠ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "بنود حارس 1 نقطة",
+                "locale": "ar",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "١ حدوث(ات)",
+                "locale": "ar",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "أقل من 5 نقاط: لا يحقق الفئة R1",
+            "locale": "ar",
+            "template": "documented-authored-76e05a5bcbe0d576d575"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "住户/房间比",
+                "locale": "zh",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0.40（0分）",
+                "locale": "zh",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.4,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3分监测项",
+                "locale": "zh",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "3次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2分监测项",
+                "locale": "zh",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1分监测项",
+                "locale": "zh",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "4次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3：最高风险",
+            "locale": "zh",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "住户/房间比",
+                "locale": "zh",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1.00（2分）",
+                "locale": "zh",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1,
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3分监测项",
+                "locale": "zh",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2分监测项",
+                "locale": "zh",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1分监测项",
+                "locale": "zh",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "3次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R1：较低风险",
+            "locale": "zh",
+            "template": "documented-authored-c7d75a18f258bbe30167"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "住户/房间比",
+                "locale": "zh",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1.25（3分）",
+                "locale": "zh",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1.25,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3分监测项",
+                "locale": "zh",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2分监测项",
+                "locale": "zh",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1分监测项",
+                "locale": "zh",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "2次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R2：中等风险",
+            "locale": "zh",
+            "template": "documented-authored-9ae9d546bcab5e483281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "住户/房间比",
+                "locale": "zh",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "2.00（3分）",
+                "locale": "zh",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  2,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3分监测项",
+                "locale": "zh",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "1次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2分监测项",
+                "locale": "zh",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1分监测项",
+                "locale": "zh",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3：最高风险",
+            "locale": "zh",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "note": {
+            "text": "2004年和2013年表格将R3写为大于9分；9分没有明确范围。本实现将9分归为R3，作为本地保守选择。",
+            "locale": "zh",
+            "template": "documented-authored-ea16af942211afe8591e"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "住户/房间比",
+                "locale": "zh",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0.67（0分）",
+                "locale": "zh",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.67,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3分监测项",
+                "locale": "zh",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2分监测项",
+                "locale": "zh",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1分监测项",
+                "locale": "zh",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1次发生",
+                "locale": "zh",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低于5分：未达到R1级",
+            "locale": "zh",
+            "template": "documented-authored-76e05a5bcbe0d576d575"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "居住者/部屋数比",
+                "locale": "ja",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0.40（0点）",
+                "locale": "ja",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.4,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "3件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "4件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3：最大リスク",
+            "locale": "ja",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "居住者/部屋数比",
+                "locale": "ja",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1.00（2点）",
+                "locale": "ja",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1,
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "3件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R1：低リスク",
+            "locale": "ja",
+            "template": "documented-authored-c7d75a18f258bbe30167"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "居住者/部屋数比",
+                "locale": "ja",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1.25（3点）",
+                "locale": "ja",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1.25,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "2件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R2：中等リスク",
+            "locale": "ja",
+            "template": "documented-authored-9ae9d546bcab5e483281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "居住者/部屋数比",
+                "locale": "ja",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "2.00（3点）",
+                "locale": "ja",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  2,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "1件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3：最大リスク",
+            "locale": "ja",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "note": {
+            "text": "2004年と2013年の表はR3を9点を超えると記載し、9点の範囲は明示していません。本実装ではローカルの保守的な選択として9点をR3とします。",
+            "locale": "ja",
+            "template": "documented-authored-ea16af942211afe8591e"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "居住者/部屋数比",
+                "locale": "ja",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0.67（0点）",
+                "locale": "ja",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.67,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1点のセンチネル項目",
+                "locale": "ja",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1件の発生",
+                "locale": "ja",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "5点未満：R1クラスに達しない",
+            "locale": "ja",
+            "template": "documented-authored-76e05a5bcbe0d576d575"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Exemplo do artigo: 2 acamados, 1 deficiente físico, 1 idoso &gt; 70, 1 hipertenso, 2 analfabetos, 2 moradores em 5 cômodos: 13 (R3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "निवासी/कमरा अनुपात",
+                "locale": "hi",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0.40 (0 अंक)",
+                "locale": "hi",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.4,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "3 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "4 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: अधिकतम जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "4 moradores em 4 cômodos, 1 hipertenso, 1 diabético, 1 idoso &gt; 70: 5 (R1)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "निवासी/कमरा अनुपात",
+                "locale": "hi",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1.00 (2 अंक)",
+                "locale": "hi",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1,
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "3 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R1: कम जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-c7d75a18f258bbe30167"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "5 moradores em 4 cômodos, 1 desempregado, 2 analfabetos: 7 (R2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "निवासी/कमरा अनुपात",
+                "locale": "hi",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "1.25 (3 अंक)",
+                "locale": "hi",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  1.25,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "2 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R2: मध्यम जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-9ae9d546bcab5e483281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Saneamento precário, 6 moradores em 3 cômodos, 1 drogadição, 1 diabético: 9 (R3 conservador)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "निवासी/कमरा अनुपात",
+                "locale": "hi",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "2.00 (3 अंक)",
+                "locale": "hi",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  2,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "1 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "1 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "R3: अधिकतम जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-cd9ea40839e151f53c1a"
+          },
+          "note": {
+            "text": "2004 और 2013 की तालिकाएँ R3 को 9 से अधिक बताती हैं; 9 अंक की स्पष्ट श्रेणी नहीं है। इस कार्यान्वयन में स्थानीय सावधानीपूर्ण विकल्प के रूप में 9 को R3 माना जाता है।",
+            "locale": "hi",
+            "template": "documented-authored-ea16af942211afe8591e"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "2 moradores em 3 cômodos, 1 hipertenso: 1 ponto",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "निवासी/कमरा अनुपात",
+                "locale": "hi",
+                "template": "documented-authored-1a1452a9b430a0dd6368"
+              },
+              "value": {
+                "text": "0.67 (0 अंक)",
+                "locale": "hi",
+                "template": "documented-authored-a77349db160194cdc1dd",
+                "sourceNumbers": [
+                  0.67,
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "3-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-2b729c99138bd9e953bc"
+              },
+              "value": {
+                "text": "0 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "2-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-ae34c9b01e2db90dfa3b"
+              },
+              "value": {
+                "text": "0 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "1-अंक संकेतक",
+                "locale": "hi",
+                "template": "documented-authored-9b2bf3ff36267efed48f"
+              },
+              "value": {
+                "text": "1 घटना(एँ)",
+                "locale": "hi",
+                "template": "documented-authored-ae633007852b2ee45070",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "5 अंकों से कम: R1 वर्ग तक नहीं पहुँचता",
+            "locale": "hi",
+            "template": "documented-authored-76e05a5bcbe0d576d575"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

@@ -141,3 +141,69 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+R3: risco máximo
+
+| Detalhes do resultado | |
+| --- | --- |
+| Relação morador/cômodo | 0,40 (0 pontos) |
+| Sentinelas de 3 pontos | 3 ocorrência(s) |
+| Sentinelas de 2 pontos | 0 ocorrência(s) |
+| Sentinelas de 1 ponto | 4 ocorrência(s) |
+
+
+### 2
+
+R1: risco menor
+
+| Detalhes do resultado | |
+| --- | --- |
+| Relação morador/cômodo | 1,00 (2 pontos) |
+| Sentinelas de 3 pontos | 0 ocorrência(s) |
+| Sentinelas de 2 pontos | 0 ocorrência(s) |
+| Sentinelas de 1 ponto | 3 ocorrência(s) |
+
+
+### 3
+
+R2: risco médio
+
+| Detalhes do resultado | |
+| --- | --- |
+| Relação morador/cômodo | 1,25 (3 pontos) |
+| Sentinelas de 3 pontos | 0 ocorrência(s) |
+| Sentinelas de 2 pontos | 1 ocorrência(s) |
+| Sentinelas de 1 ponto | 2 ocorrência(s) |
+
+
+### 4
+
+R3: risco máximo
+
+| Detalhes do resultado | |
+| --- | --- |
+| Relação morador/cômodo | 2,00 (3 pontos) |
+| Sentinelas de 3 pontos | 1 ocorrência(s) |
+| Sentinelas de 2 pontos | 1 ocorrência(s) |
+| Sentinelas de 1 ponto | 1 ocorrência(s) |
+
+As tabelas de 2004 e 2013 indicam R3 acima de 9; o escore 9 fica sem faixa explícita. Nesta implementação, 9 é classificado como R3 por opção local conservadora.
+
+
+### 5
+
+Abaixo de 5 pontos: não atinge a classe R1
+
+| Detalhes do resultado | |
+| --- | --- |
+| Relação morador/cômodo | 0,67 (0 pontos) |
+| Sentinelas de 3 pontos | 0 ocorrência(s) |
+| Sentinelas de 2 pontos | 0 ocorrência(s) |
+| Sentinelas de 1 ponto | 1 ocorrência(s) |
+
